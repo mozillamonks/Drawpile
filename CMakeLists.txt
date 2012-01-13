@@ -1,5 +1,4 @@
 project ( drawpile CXX C )
-
 # CMake version requirement. CMake might whine on older version, but will
 # work unless compatibility is broken.
 
@@ -61,6 +60,7 @@ set ( QT_USE_QTNETWORK true )
 SET ( QT_USE_QTXML true )
 
 find_package ( Qt4 REQUIRED )
+find_package ( ZLIB REQUIRED )
 
 #add_subdirectory ( config/ )
 
